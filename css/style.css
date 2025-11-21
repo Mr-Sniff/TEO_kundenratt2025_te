@@ -3,6 +3,7 @@
 body {
   background-color: #b58b63;
 }
+
 main {
   background-color: #a5b58d;
   padding: 10px;
@@ -12,20 +13,33 @@ main {
   grid-template:
   "a a"
   "b c"
-  "d e";
+  "d e"; 
+  border: 2px solid #000;
 }
+
 #title {
   grid-area: a;
   border: 5px solid #000;
   background-color: #f6efe8;
 }
 
-#home_txt1{
-  
+img {
+  max-width: 93%;
+  border: 2px solid #000;
+  margin: auto;
 }
+
+h3{
+  text-align: center;
+}
+
 div {
-  margin: 5px;
-  background-color: #f6efe8;
+  width: 93%;
+  margin: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f6efe8; 
   border: 2px solid #000;
 }
+
 
