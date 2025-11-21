@@ -1,1 +1,31 @@
 /* Denna fil skall innehålla din CSS kod */
+
+body {
+  background-color: #b58b63;
+}
+main {
+  background-color: #a5b58d;
+  padding: 10px;
+  margin: auto;
+  display: grid;
+  max-width: 50em;
+  grid-template:
+  "a a"
+  "b c"
+  "d e";
+}
+#title {
+  grid-area: a;
+  border: 5px solid #000;
+  background-color: #f6efe8;
+}
+
+#home_txt1{
+  
+}
+div {
+  margin: 5px;
+  background-color: #f6efe8;
+  border: 2px solid #000;
+}
+
