@@ -6,10 +6,12 @@ body {
 
 main {
   background-color: #a5b58d;
+  
+  min-height: 90vh;
   padding: 10px;
   margin: auto;
   display: grid;
-  max-width: 50em;
+  max-width: 62vw;
   grid-template:
   "a a"
   "b c"
@@ -18,28 +20,37 @@ main {
 }
 
 #title {
+  text-align: center;
+  margin: auto;
+  padding: 0.2em;
   grid-area: a;
   border: 5px solid #000;
   background-color: #f6efe8;
 }
 
 img {
-  max-width: 93%;
+  height: 38vh;
   border: 2px solid #000;
   margin: auto;
 }
 
 h3{
+  font-size: 2em;
   text-align: center;
 }
 
 div {
-  width: 93%;
-  margin: 20px;
+
+  height: 38vh;
+  margin: auto;
   margin-right: auto;
   margin-left: auto;
   background-color: #f6efe8; 
   border: 2px solid #000;
 }
 
-
+p {
+  font-size: 1.7em;
+  text-align: center;
+  margin: 1em;
+}
