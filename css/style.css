@@ -17,6 +17,8 @@ main {
   "b c"
   "d e"; 
   border: 2px solid #000;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 1em;
 }
 
 #title {
@@ -24,14 +26,24 @@ main {
   margin: auto;
   padding: 0.2em;
   grid-area: a;
-  border: 5px solid #000;
+  border: 2px solid #000;
   background-color: #f6efe8;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 1em;
 }
 
-img {
+#main_img1, #main_img2 {
   height: 38vh;
   border: 2px solid #000;
   margin: auto;
+  box-shadow: 0px 0px 10px black;
+}
+
+#main_img1 {
+  border-radius: 0 1em 1em 0em;
+}
+#main_img2 {
+  border-radius: 1em 0 0 1em;
 }
 
 h3{
@@ -39,15 +51,22 @@ h3{
   text-align: center;
 }
 
-div {
-
+#main_text1, #main_text2 {
   height: 38vh;
   margin: auto;
   margin-right: auto;
   margin-left: auto;
   background-color: #f6efe8; 
   border: 2px solid #000;
+  box-shadow: 0px 0px 10px black;
 }
+#main_text1 {
+  border-radius: 1em 0 0 1em;
+}
+#main_text2 {
+  border-radius: 0 1em 1em 0;
+}
+
 
 p {
   font-size: 1.7em;
