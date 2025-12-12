@@ -1,5 +1,10 @@
 /* Denna fil skall innehålla din CSS kod */
 
+* {
+  transition: all 0.2s ease;
+}
+
+
 body {
   background-color: #b58b63;
 }
@@ -8,22 +13,26 @@ main {
   background-color: #a5b58d;
   
   min-height: 90vh;
-  padding: 10px;
+  padding: 20px;
   margin: auto;
   display: grid;
-  max-width: 62vw;
+  max-width: 70vw;
   grid-template:
   "a a"
   "b c"
-  "d e"; 
+  "d e"
+  "f f"; 
   border: 2px solid #000;
   box-shadow: 0px 0px 10px black;
+  
   border-radius: 1em;
 }
+
 
 #title {
   text-align: center;
   margin: auto;
+  margin-bottom: 1em;
   padding: 0.2em;
   grid-area: a;
   border: 2px solid #000;
@@ -72,4 +81,35 @@ p {
   font-size: 1.7em;
   text-align: center;
   margin: 1em;
+}
+
+footer {
+  min-height: 5vh;
+  
+  padding: 20px;
+  margin: auto;
+  margin-top: 1em;
+  background-color: #a5b58d;
+  display: flex;
+  max-width: 70vw;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 1em;
+  justify-content: space-around;
+}
+
+a {
+  background-color: #f6efe8;
+  padding: 1em;
+  min-width: 10em;
+  color: black;
+  font-size: 1.7em;
+  text-align:center;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 1em;
+}
+
+a:hover {
+  min-width: 20em;
 }
