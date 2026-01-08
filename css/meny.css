@@ -23,7 +23,8 @@ main {
   grid-template:
   "a a"
   "b c"
-  "d e"; 
+  "d e"
+  "f g"; 
   border: 2px solid #000;
   box-shadow: 0px 0px 10px black;
   
@@ -37,7 +38,7 @@ main {
   box-shadow: 0px 0px 10px black;
   border-radius: 1em; 
   max-width: 35em;
-  height: 90%;
+  height: 95%;
   display: grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: auto 1fr auto;
@@ -50,11 +51,16 @@ main {
 .food > h3 {
   grid-area: a;
   margin: auto;
+  font-size: 1.5em;
 }
 .food > .food-img {
   grid-area: b;
   max-width: 100%;
+  margin: auto;
   object-fit: contain;
+  border: 2px solid black;
+  border-left: 0;
+  border-radius: 0 0.5em 0.5em 0;
 }
 .food > p {
   grid-area: c;
@@ -64,6 +70,7 @@ main {
   grid-area: d;
   max-width: 5em; 
   justify-self: end;
+  margin: 0.3em;
 }
 
 #title {
@@ -77,6 +84,34 @@ main {
   background-color: #f6efe8;
   box-shadow: 0px 0px 10px black;
   border-radius: 1em;
+}
+#visa-mer {
+  grid-area: f;
+}
+
+#catering > a {
+  margin: auto;
+}
+
+#catering {
+  grid-area: g;
+}
+#visa-mer, #catering {
+  background-color: #f6efe8;
+  margin: 3em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 1em;
+  font-size: 2em;
+  text-align: center;
+  align-self: center;
+  padding: 0.5em;
+}
+
+main a {
+  color: black;
 }
 
 h3{
