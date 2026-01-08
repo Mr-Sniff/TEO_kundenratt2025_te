@@ -15,20 +15,56 @@ main {
   grid-area: a;
   background-color: #a5b58d;
   
+  height: 90vh;
   padding: 20px;
   margin: auto;
   display: grid;
   width: 70vw;
   grid-template:
-  "a"
-  "b"; 
+  "a a"
+  "b c"
+  "d e"; 
   border: 2px solid #000;
   box-shadow: 0px 0px 10px black;
   
-  min-height: 90vh;
   border-radius: 1em;
 }
 
+.food {
+  margin: auto;
+  background-color: #f6efe8;
+  border: 2px solid #000;
+  box-shadow: 0px 0px 10px black;
+  border-radius: 1em; 
+  max-width: 35em;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+  "a a"
+  "b c"
+  "b d";
+}
+
+.food > h3 {
+  grid-area: a;
+  margin: auto;
+}
+.food > .food-img {
+  grid-area: b;
+  max-width: 100%;
+  object-fit: contain;
+}
+.food > p {
+  grid-area: c;
+  max-width: 100%;
+}
+.food > .food-tag {
+  grid-area: d;
+  max-width: 5em; 
+  justify-self: end;
+}
 
 #title {
   text-align: center;
@@ -44,7 +80,7 @@ main {
 }
 
 h3{
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
 }
 
@@ -97,63 +133,4 @@ aside {
   border: 2px solid #000;
   box-shadow: 0px 0px 10px black;
   border-radius: 1em; 
-}
-
-#om_kafeet, #personal{
-  background-color: #f6efe8;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 1em;
-  width: 95%;
-  height: 95%;
-  margin: auto;
-}
-
-#om_kafeet {
-  display: flex;
-  justify-content: space-around;
-}
-
-#historia, #vision {
-  background-color: #f6efe8;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 1em;
-  flex: 1;
-  padding: 10px;
-  margin: 1em;
-}
-
-#personal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-#personal > div {
-  background-color: #f6efe8;
-  margin: 1em;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 1em;
-  flex:1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-
-#personal ul {
-  margin: 1em;
-  margin-top: -1em;
-  font-size: 0.8em;
-  height: 30%;
-}
-
-#personal img {
-  max-height: 9em;
-  margin: auto;
-  border: 2px solid #000;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 1em;
 }
