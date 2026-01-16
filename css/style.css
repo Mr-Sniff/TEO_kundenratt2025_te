@@ -7,7 +7,7 @@
 body {
   background-color: #b58b63;
   display: grid;
-  grid-template:
+  grid-template-areas:
   "b a";
 }
 
@@ -20,7 +20,7 @@ main {
   margin: auto;
   display: grid;
   max-width: 70vw;
-  grid-template:
+  grid-template-areas:
   "a a"
   "b c"
   "d e"
@@ -60,7 +60,7 @@ main {
   border-radius: 1em 0 0 1em;
 }
 
-h3{
+h2{
   font-size: 2em;
   text-align: center;
 }
@@ -105,7 +105,7 @@ aside {
   justify-content: space-around;
 }
 
-#nav_item {
+.nav_item {
   background-color: #f6efe8;
   padding: 1em;
   min-width: 10em;
@@ -115,17 +115,17 @@ aside {
   border-radius: 1em;
 }
 
-#nav_item > a {
+.nav_item > a {
   color: black;
   font-size: 1.7em;
   margin: auto;
 }
 
-#nav_item:hover {
+.nav_item:hover {
   background-color: #e8d6c4;
 }
 
-#menu_img {
+.menu_img {
   margin: auto;
   margin-top: 1em;
   max-width: 100%;
